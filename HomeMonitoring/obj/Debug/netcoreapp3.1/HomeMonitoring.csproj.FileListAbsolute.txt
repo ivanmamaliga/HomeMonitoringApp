@@ -1,0 +1,13 @@
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\obj\Debug\netcoreapp3.1\HomeMonitoring.csprojAssemblyReference.cache
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\obj\Debug\netcoreapp3.1\HomeMonitoring.AssemblyInfoInputs.cache
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\obj\Debug\netcoreapp3.1\HomeMonitoring.AssemblyInfo.cs
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\obj\Debug\netcoreapp3.1\HomeMonitoring.csproj.CoreCompileInputs.cache
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\bin\Debug\netcoreapp3.1\HomeMonitoring.exe
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\bin\Debug\netcoreapp3.1\HomeMonitoring.deps.json
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\bin\Debug\netcoreapp3.1\HomeMonitoring.runtimeconfig.json
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\bin\Debug\netcoreapp3.1\HomeMonitoring.runtimeconfig.dev.json
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\bin\Debug\netcoreapp3.1\HomeMonitoring.dll
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\bin\Debug\netcoreapp3.1\HomeMonitoring.pdb
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\obj\Debug\netcoreapp3.1\HomeMonitoring.dll
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\obj\Debug\netcoreapp3.1\HomeMonitoring.pdb
+C:\Users\johnc\OneDrive2\OneDrive\HomeMonitoringApp\HomeMonitoringConsApp\HomeMonitoring\obj\Debug\netcoreapp3.1\HomeMonitoring.genruntimeconfig.cache
