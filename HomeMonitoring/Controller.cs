@@ -4,7 +4,7 @@ namespace HomeMonitoring
 {
     public class Controller
     {
-        //private readonly Bedroom _bedroom;
+       
 
         //private readonly Light _light;
 
