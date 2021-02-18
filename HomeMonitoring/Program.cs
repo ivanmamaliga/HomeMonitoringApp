@@ -9,6 +9,10 @@ namespace HomeMonitoring
             //ask the user what he/she wants to do?
 
             Console.WriteLine("Hello! Please choose from next options: \n\r");
+            Console.WriteLine("1 - Check the system if it is armed\n\r");
+            Console.WriteLine("2 - Activate the system\n\r");
+            Console.WriteLine("3 - Choose the room\n\r");
+            Console.WriteLine("4 - Manage the devices\n\r");
 
 
 
