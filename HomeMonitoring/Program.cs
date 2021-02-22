@@ -26,23 +26,32 @@ namespace HomeMonitoring
             //if (thisAssemDescriptionAttribute != null)
             //    Console.WriteLine($"Assembly Description: {thisAssemDescriptionAttribute.Description}");
 
-            //ask the user what he/she wants to do?
+
+            //Display the current condition : time of the day, outside temeperature - implement the weather API
 
             Console.WriteLine("Hello! Please choose from next options: \n\r");
-            Console.WriteLine("1 - Check the system if it is armed\n\r");
+            Console.WriteLine("1 - Check the Status\n\r");
             Console.WriteLine("2 - Activate the system\n\r");
             Console.WriteLine("3 - Choose the room\n\r");
             Console.WriteLine("4 - Manage the devices\n\r");
 
-
-
-                    
-            if (Controller.GetStatus!= true)
+            Console.ReadKey();
             {
-                Controller.Activate();
+                Controller.GetStatus();
             }
 
-        
+            Controller.Activate();
+
+            Controller.GetStatus();
+
+            Console.WriteLine("Press b1 to turn the bulb1 on or off" );
+            Console.WriteLine("Press b2 to turn the bulb1 on or off" );
+            Console.WriteLine("Press b3 to turn the bulb1 on or off" );
+            Console.WriteLine("Press b4 to turn the bulb1 on or off" );
+
+
+
+            
 
         }
     }

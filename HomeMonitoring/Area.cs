@@ -4,12 +4,24 @@ using System.Text;
 
 namespace HomeMonitoring
 {
-    abstract class Area
+    /// <summary>
+    /// Area(House) setup?
+    /// </summary>
+    public class Area
     {
-        public int SqFootage { get; set; }
+        public void GetRooms()
+        {
+            Room room1 = new Room(); //{ number of bulbs, vent position}
 
-        public int NumberOfWindow { get; set; }
+            List<Room> rooms = new List<Room>() { room1 };
+        }
 
-        public int NumberOfVents { get; set; }
+
+        internal static void AddRooms()
+        {
+
+        }
+
+
     }
 }

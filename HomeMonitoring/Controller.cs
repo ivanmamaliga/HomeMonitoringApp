@@ -1,34 +1,38 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace HomeMonitoring
 {
+    /// <summary>
+    /// House Controller and Controller Methods
+    /// </summary>
     public static class Controller
     {
-       
-
-        //private readonly Light _light;
-
-        //private readonly Vent _vent;
-
-        //private readonly TemperatureSensor _temperatureSensor;
-
-        public static string Bedroom { get; set; }
-
-       
-
-        internal static void AddRooms()
-        {
-            
-        }
+        private static IEnumerable<Room> rooms;
 
 
+        //private readonly TemperatureSensor _temperatureSensor;        
 
         internal static void Activate()
         {
 
         }
-        internal static bool GetStatus
+        public static void GetStatus()
         {
-            get; set;
+          
+            foreach (Room rm in rooms)
+            {
+                // get the Number, Type and Properties of the bulb
+
+                //check for the bulb if on/of
+
+                //Output like Bedroom 1 - bulb 1 is on
+                //                    2 - bulb 2 is off ..   
+
+
+            }
+
+
         }
     }
+}

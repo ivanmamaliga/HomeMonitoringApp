@@ -4,9 +4,10 @@ namespace HomeMonitoring
 {
     internal class Room 
     {
-      
+         
         public void GetBulbs()
         {
+            
             Bulb bulb1 = new Bulb() { BulbType = "Regular", BulbLuminiscence = 1200, BulbPower = 35};
             Bulb bulb2 = new Bulb() { BulbType = "Regular", BulbLuminiscence = 2200, BulbPower = 55};
             Bulb bulb3 = new Bulb() { BulbType = "Regular", BulbLuminiscence = 2300, BulbPower = 75};
