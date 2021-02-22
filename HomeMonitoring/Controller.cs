@@ -2,7 +2,7 @@
 
 namespace HomeMonitoring
 {
-    public class Controller
+    public static class Controller
     {
        
 
@@ -12,25 +12,23 @@ namespace HomeMonitoring
 
         //private readonly TemperatureSensor _temperatureSensor;
 
-        public string Bedroom { get; set; }
+        public static string Bedroom { get; set; }
 
        
 
-        internal void AddRooms()
+        internal static void AddRooms()
         {
-            throw new NotImplementedException();
-        }
-
-        public bool GetStatus()
-        {
-            throw new NotImplementedException();
-        }
-
-        internal void Activate()
-        {
-            throw new NotImplementedException();
+            
         }
 
 
+
+        internal static void Activate()
+        {
+
+        }
+        internal static bool GetStatus
+        {
+            get; set;
+        }
     }
-}

@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "3JTKVQkg4suThSSGsRLxbFIWpRw9C0SV6x72qQ8uZKwOOzXqeKGOYI2FbpVtyvxw805opMUIo0lqm73873GdfA==",
+  "dgSpecHash": "2s8LOOQOJAoIF36MXFr/r6w2i3mPWYzgnWDKeDovLuCd4djCS+BejjR2mv86AMPW9hXWrJhoYf9Z4utF1u0Q/w==",
   "success": true,
   "projectFilePath": "C:\\Users\\johnc\\OneDrive2\\OneDrive\\HomeMonitoringApp\\HomeMonitoringConsApp\\HomeMonitoring\\HomeMonitoring.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\johnc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\johnc\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\johnc\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\johnc\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\johnc\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\johnc\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\johnc\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\johnc\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+  ],
   "logs": []
 }
