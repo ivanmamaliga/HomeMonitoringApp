@@ -8,31 +8,37 @@ namespace HomeMonitoring
     /// </summary>
     public static class Controller
     {
-        private static IEnumerable<Room> rooms;
+        //private readonly TemperatureSensor _temperatureSensor;   
 
 
-        //private readonly TemperatureSensor _temperatureSensor;        
 
-        internal static void Activate()
-        {
-
-        }
         public static void GetStatus()
         {
-          
-            foreach (Room rm in rooms)
+            Area _area1 = new Area();
+
+            Room _room = new Room();
+
+            //foreach (Room room in _area1.GetRooms())
+            //{
+            //    Room _room = new Room();
+            // get the Number, Type and Properties of the bulb
+            foreach (Bulb bulb in _room.GetBulbs())
             {
-                // get the Number, Type and Properties of the bulb
-
-                //check for the bulb if on/of
-
-                //Output like Bedroom 1 - bulb 1 is on
-                //                    2 - bulb 2 is off ..   
-
-
+                //return bulb.GetBulbStatus();
             }
+
+            //     //check for the bulb if on/of
+
+            //     //Output like Bedroom 1 - bulb 1 is on
+            //     //                    2 - bulb 2 is off ..   
 
 
         }
+
+
     }
 }
+       
+
+
+   
