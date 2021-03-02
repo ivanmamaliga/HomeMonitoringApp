@@ -13,7 +13,7 @@ namespace HomeMonitoring
             //Display the current condition : time of the day, outside temeperature - implement the weather API
             CurrentCondition.GetCurrentTime();
 
-            Console.WriteLine(CurrentCondition.GetWeather()); 
+            CurrentCondition.GetWeather(); 
 
             //Area.SetNumberOfRooms();
 
