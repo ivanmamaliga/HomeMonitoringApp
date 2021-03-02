@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2s8LOOQOJAoIF36MXFr/r6w2i3mPWYzgnWDKeDovLuCd4djCS+BejjR2mv86AMPW9hXWrJhoYf9Z4utF1u0Q/w==",
+  "dgSpecHash": "Zs910Pb7Znfl7s8sF+l20DhsIbqPKmSmPsa+7u3+hYQ3t4pcrJix9znkSfXtj54G/Af2Rttq8FVympkNHcDZTA==",
   "success": true,
   "projectFilePath": "C:\\Users\\johnc\\OneDrive2\\OneDrive\\HomeMonitoringApp\\HomeMonitoringConsApp\\HomeMonitoring\\HomeMonitoring.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\johnc\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",

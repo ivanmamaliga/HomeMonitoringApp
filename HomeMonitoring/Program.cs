@@ -11,40 +11,59 @@ namespace HomeMonitoring
         {
 
             //Display the current condition : time of the day, outside temeperature - implement the weather API
+            CurrentCondition.GetCurrentTime();
 
+            Console.WriteLine(CurrentCondition.GetWeather()); 
 
             //Area.SetNumberOfRooms();
 
-            Console.WriteLine("Hello! Please choose from next options: \n\r");
-            Console.WriteLine("1 - Check the Status\n\r");
-            Console.WriteLine("2 - Activate the system\n\r");
-            Console.WriteLine("3 - Choose the room\n\r");
-            
-            Console.WriteLine("4 - Manage the devices\n\r");
-
-            Console.WriteLine("Press q to quit!");
+            displayMainMenu();
 
             string key = Console.ReadLine();
 
-            if(key == "1")
+            switch(key)
             {
-                Controller.GetStatus();
-            }
-            if (key == "2")
-            {
-                Area.GetRooms();
-            }
-            if (key == "4")
-            {
-                ManageMyDevices();
-            }
-            else if (key == "q")
-            {
-                Console.Clear();
+                case "1":
+                    Controller.GetStatus();
+                    break;
+
+                case "2":
+                    Area.GetRooms();
+                    break;
+
+                case "3":
+                    ManageMyDevices();
+                    break;
+
+                case "q":
+                    break;
+
+                case "r":
+                    displayMainMenu();
+                    break;
+
             }
             
+
+            Area.SetNumberOfRooms();
          
 
+
+        }
+
+        public static void displayMainMenu()
+        {
+
+            Console.WriteLine("Please choose from next options: \n\r");
+            Console.WriteLine("1 - Check the Status\n\r");
+            //Console.WriteLine("2 - Activate the system\n\r");
+            Console.WriteLine("2 - Choose the room\n\r");
+
+            Console.WriteLine("3 - Manage the devices\n\r");
+
+            Console.WriteLine("Press q to quit!");
+
+            Console.WriteLine("Press r to return to main menu!");
 
         }
 

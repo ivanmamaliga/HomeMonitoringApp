@@ -13,7 +13,11 @@
         public bool IsBulbOn { get { return IsBulbOn; } set { IsBulbOn = false; } }
 
      
-     
+        public enum BulbOnOff
+        {
+            BulbOn,
+            BulbOff
+        }
 
 
     }
