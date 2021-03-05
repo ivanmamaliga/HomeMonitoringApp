@@ -16,7 +16,7 @@ namespace HomeMonitoring
         public List<Weather> Weather { get; set; }
 
         public string _base { get; set; }
-        public WeatherMain main { get; set; }
+        public Main main { get; set; }
         public int visibility { get; set; }
         public Wind wind { get; set; }
         public Clouds clouds { get; set; }
@@ -34,7 +34,7 @@ namespace HomeMonitoring
         public float lat { get; set; }
     }
 
-    public class WeatherMain
+    public class Main
     {
         [JsonProperty(PropertyName = "temp") ]
         public float Temp { get; set; }
