@@ -15,6 +15,7 @@ namespace HomeMonitoring
         {
             Console.WriteLine("Please choose the number of Rooms : \r\n");
 
+
             Console.WriteLine("1 - one room \r\n");
             Console.WriteLine("2 - two rooms \r\n");
             

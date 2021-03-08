@@ -16,8 +16,8 @@ namespace HomeMonitoring
       
         internal static void GetCurrentTime()
         {
-            DateTime today = new DateTime();
-            Console.WriteLine($"Today is {today}. "); //needs some formatting
+            DateTime today = DateTime.Now;
+            Console.WriteLine($"Today is {today.ToString("F")}. ");
         }
 
         public static void GetCurrentConditions()
