@@ -38,7 +38,8 @@ namespace HomeMonitoring
     {
         [JsonProperty(PropertyName = "temp") ]
         public float Temp { get; set; }
-        public float feels_like { get; set; }
+        [JsonProperty(PropertyName = "feels_like")]
+        public float FeelsLike { get; set; }
         
         public float temp_min { get; set; }
         public float temp_max { get; set; }

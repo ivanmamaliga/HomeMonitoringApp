@@ -9,45 +9,31 @@ namespace HomeMonitoring
     {
         static void Main(string[] args)
         {
-
-
-            //Display the current condition : time of the day, outside temeperature - implement the weather API
-
-            var exit = false;
+           
             CurrentCondition.GetCurrentTime();
 
             CurrentCondition.GetCurrentConditions();
 
-            //Area.SetNumberOfRooms();
+            //ManageDevices();
 
+            //Area.SetNumberOfRooms();
+            var exit = false;
             while (!exit)
             {
                 switch (ProvideMenuOptions())
                 {
                     case MenuOption.CheckTheStatus:
-                        //string results = await GetCurrentTemperature();
-                        //if (results != default)
-                        //    Console.WriteLine($"The current temperature is {results}");
-                        //else
-                        //    PrintErrorMessage("Unable to retrieve weather data...");
+                        GetCurrentStatus();
                         Console.WriteLine("Press any key continue...");
                         Console.ReadKey();
                         break;
                     case MenuOption.ChooseRoom:
-                        //string convertResults = ConvertTemperature();
-                        //if (convertResults != _unableToConvertTemperature)
-                        //    Console.WriteLine($"Converted temperature is {convertResults}");
-                        //else
-                        //    PrintErrorMessage(convertResults);
+                        Area.SetNumberOfRooms();
                         Console.WriteLine("Press any key continue...");
                         Console.ReadKey();
                         break;
                     case MenuOption.ManageDevices:
-                        //string convertResults = ConvertTemperature();
-                        //if (convertResults != _unableToConvertTemperature)
-                        //    Console.WriteLine($"Converted temperature is {convertResults}");
-                        //else
-                        //    PrintErrorMessage(convertResults);
+                        ManageDevices();
                         Console.WriteLine("Press any key continue...");
                         Console.ReadKey();
                         break;
@@ -56,31 +42,9 @@ namespace HomeMonitoring
                         break;
                 }
             }
-           
-
-
-
-            Area.SetNumberOfRooms();
-         
-
 
         }
 
-        //public static void displayMainMenu()
-        //{
-
-        //    Console.WriteLine("Please choose from next options: \n\r");
-        //    Console.WriteLine("1 - Check the Status\n\r");
-        //    //Console.WriteLine("2 - Activate the system\n\r");
-        //    Console.WriteLine("2 - Choose the room\n\r");
-
-        //    Console.WriteLine("3 - Manage the devices\n\r");
-
-        //    Console.WriteLine("Press q to quit!");
-
-        //    Console.WriteLine("Press r to return to main menu!");
-
-        //}
         private static MenuOption ProvideMenuOptions()
         {
 
@@ -113,6 +77,7 @@ namespace HomeMonitoring
             var keyPress = Console.ReadKey(true);
             var returnValue = 0;
             switch (keyPress.Key)
+
             {
                 case ConsoleKey.D1:
                 case ConsoleKey.NumPad1:
@@ -134,8 +99,30 @@ namespace HomeMonitoring
         return (MenuOption)returnValue;
         }
 
+        private static string GetCurrentStatus()
+        {
+            Console.WriteLine();
+            Console.WriteLine($"The Area is {Area.Activated()}");
+            if (Area.Activated() != true)
+            {
+                Console.WriteLine($"Press {'A'} to activate the system ");
+                Console.WriteLine($"Press {'D'} to desactivate the system ");
+                char decision = (char)Console.Read();
+                if (decision == 'A')
+                {
+                    Area.activate = true;
+                }
+                else
+                {
+                    Area.activate = false;
+                }     
+                  
+            }
 
-         private static void ManageDevices()
+            return default;
+         
+        }
+        public static void ManageDevices()
         {
             Console.WriteLine("Press b1 to turn the bulb1 on or off");
             Console.WriteLine("Press b2 to turn the bulb1 on or off");

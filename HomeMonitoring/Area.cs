@@ -11,16 +11,18 @@ namespace HomeMonitoring
     {
         public int numberOfRooms { get; set; } = 1;
 
+
+        public static bool activate { get; set; } = false;
+    
+
         public static int SetNumberOfRooms()
         {
             Console.WriteLine("Please choose the number of Rooms : \r\n");
-
-
             Console.WriteLine("1 - one room \r\n");
             Console.WriteLine("2 - two rooms \r\n");
             
 
-            int numberOfRooms = Int32.Parse(Console.ReadLine());
+            int numberOfRooms = (int)Console.Read();
 
             if(numberOfRooms == 1) 
             {
@@ -45,13 +47,18 @@ namespace HomeMonitoring
 
             return rooms;
         }
-        
 
+       
+      
 
+        internal static bool Activated()
+        {
+            if (activate != false)
+            {
+                return true;
+            }
 
-
-
-
-
+            return default;
+        }
     }
 }

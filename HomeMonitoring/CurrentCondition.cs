@@ -17,7 +17,7 @@ namespace HomeMonitoring
         internal static void GetCurrentTime()
         {
             DateTime today = DateTime.Now;
-            Console.WriteLine($"Today is {today.ToString("F")}. ");
+            Console.WriteLine(value: $"Today is {today:F}. ");
         }
 
         public static void GetCurrentConditions()
@@ -33,6 +33,9 @@ namespace HomeMonitoring
             var results = serializer.Deserialize<WeatherSearch>(jsonReader);
             
             Console.WriteLine($"The temp is {results.main.Temp}");
+            Console.WriteLine($"Feels like {results.main.FeelsLike}");
+
+
 
             Console.ReadLine();
         
