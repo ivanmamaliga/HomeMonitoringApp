@@ -12,6 +12,19 @@ namespace HomeMonitoring
         {
             CurrentCondition.GetCurrentTime();
 
+            ConsoleColor foregroundColor = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(@"  _   _                        __  __             _ _             _             ");
+            Console.WriteLine(@" | | | | ___  _ __ ___   ___  |  \/  | ___  _ __ (_) |_ ___  _ __(_)_ __   __ _ ");
+            Console.WriteLine(@" | |_| |/ _ \| '_ ` _ \ / _ \ | |\/| |/ _ \| '_ \| | __/ _ \| '__| | '_ \ / _` |");
+            Console.WriteLine(@" |  _  | (_) | | | | | |  __/ | |  | | (_) | | | | | || (_) | |  | | | | | (_| |");
+            Console.WriteLine(@" |_| |_|\___/|_| |_| |_|\___| |_|  |_|\___/|_| |_|_|\__\___/|_|  |_|_| |_|\__, |");
+            Console.WriteLine(@"                                                                          |___/ "); Console.WriteLine("");
+            Console.WriteLine();
+
+            CurrentCondition.GetCurrentConditions();
+            Console.WriteLine();
+
             var exit = false;
             while (!exit)
             {
@@ -20,7 +33,8 @@ namespace HomeMonitoring
                     case MenuOption.CheckTheStatus:
                         GetCurrentStatus();
                         Console.WriteLine("Press any key continue...");
-                        Console.ReadKey();
+                                            
+                        Activate(Console.ReadLine());
                         break;
                     case MenuOption.ChooseRoom:
                         Area.SetNumberOfRooms();
@@ -40,11 +54,11 @@ namespace HomeMonitoring
 
         }
 
+        
         private static MenuOption ProvideMenuOptions()
         {
 
-            ConsoleColor foregroundColor = Console.ForegroundColor;
-
+            
             int returnValue = -1;
 
             int minDemoOptionValue = (int)Enum.GetValues(typeof(MenuOption)).Cast<MenuOption>().First();
@@ -53,16 +67,9 @@ namespace HomeMonitoring
             {
                 //Console.Clear();
                 //Console.WriteLine();
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(@"  _   _                        __  __             _ _             _             ");
-                Console.WriteLine(@" | | | | ___  _ __ ___   ___  |  \/  | ___  _ __ (_) |_ ___  _ __(_)_ __   __ _ ");
-                Console.WriteLine(@" | |_| |/ _ \| '_ ` _ \ / _ \ | |\/| |/ _ \| '_ \| | __/ _ \| '__| | '_ \ / _` |");
-                Console.WriteLine(@" |  _  | (_) | | | | | |  __/ | |  | | (_) | | | | | || (_) | |  | | | | | (_| |");
-                Console.WriteLine(@" |_| |_|\___/|_| |_| |_|\___| |_|  |_|\___/|_| |_|_|\__\___/|_|  |_|_| |_|\__, |");
-                Console.WriteLine(@"                                                                          |___/ "); Console.WriteLine("");
-                Console.WriteLine();
+               
 
-                CurrentCondition.GetCurrentConditions();
+                
 
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("Choose the option to run:");
@@ -93,7 +100,7 @@ namespace HomeMonitoring
                         break;
                 }
             }
-            Console.ForegroundColor = foregroundColor;
+            //Console.ForegroundColor = foregroundColor;
             return (MenuOption)returnValue;
         
         }
@@ -108,7 +115,7 @@ namespace HomeMonitoring
 
                 if (Area.Activated() != true)
                 {
-                    Console.WriteLine("Arae Not Activated, choose next: ");
+                    Console.WriteLine("Area Not Activated, choose next: ");
                 }
                 else
                 {
@@ -119,7 +126,17 @@ namespace HomeMonitoring
             Console.WriteLine($"Press {'A'} to activate the system ");
             Console.WriteLine($"Press {'D'} to desactivate the system ");
 
+            
         }
+        static void Activate(string activateInput)
+        {
+
+            if (activateInput == "A")
+            {
+                Console.WriteLine("The are is armed ");
+            }
+        }
+
 
         public static void ManageDevices()
         {
