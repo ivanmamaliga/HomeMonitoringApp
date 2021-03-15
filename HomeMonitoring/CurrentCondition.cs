@@ -34,12 +34,6 @@ namespace HomeMonitoring
             
             Console.WriteLine($"The temp is {results.main.Temp}");
             Console.WriteLine($"Feels like {results.main.FeelsLike}");
-
-
-
-            Console.ReadLine();
-        
-            //return reader.ReadToEnd();
         }
 
         

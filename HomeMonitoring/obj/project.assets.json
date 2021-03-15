@@ -20,6 +20,12 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.VisualStudio.VsixColorCompiler/16.0.0": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.VisualStudio.VsixColorCompiler.targets": {}
+        }
+      },
       "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
@@ -129,6 +135,21 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "Microsoft.VisualStudio.VsixColorCompiler/16.0.0": {
+      "sha512": "lN7Rrf2U6takufBrbySIzcHbWtHuT0HiUuwIsB0/6HCQ5JDML03Y9mcxke04TH3SJSspaegaRbwOgR6ljkqq2Q==",
+      "type": "package",
+      "path": "microsoft.visualstudio.vsixcolorcompiler/16.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Microsoft.VisualStudio.Pkgdef.dll",
+        "VsixColorCompiler.exe",
+        "VsixColorCompiler.exe.config",
+        "build/Microsoft.VisualStudio.VsixColorCompiler.targets",
+        "microsoft.visualstudio.vsixcolorcompiler.16.0.0.nupkg.sha512",
+        "microsoft.visualstudio.vsixcolorcompiler.nuspec"
       ]
     },
     "Newtonsoft.Json/12.0.3": {
@@ -612,6 +633,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Microsoft.VisualStudio.VsixColorCompiler >= 16.0.0",
       "Newtonsoft.Json >= 12.0.3",
       "System.Reflection >= 4.3.0"
     ]
@@ -660,6 +682,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Microsoft.VisualStudio.VsixColorCompiler": {
+            "target": "Package",
+            "version": "[16.0.0, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.3, )"
@@ -684,7 +710,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }

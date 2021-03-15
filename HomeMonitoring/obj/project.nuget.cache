@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Zs910Pb7Znfl7s8sF+l20DhsIbqPKmSmPsa+7u3+hYQ3t4pcrJix9znkSfXtj54G/Af2Rttq8FVympkNHcDZTA==",
+  "dgSpecHash": "y6MwXpkA80UMaVXBD8z5XlJYUIMzczbkkSxfI52NSYUsD19lbomLmDyZoJwDPI8FzalVaAN/9h8Pk+GI0N/OHQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\johnc\\OneDrive2\\OneDrive\\HomeMonitoringApp\\HomeMonitoringConsApp\\HomeMonitoring\\HomeMonitoring.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\johnc\\.nuget\\packages\\microsoft.visualstudio.vsixcolorcompiler\\16.0.0\\microsoft.visualstudio.vsixcolorcompiler.16.0.0.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
