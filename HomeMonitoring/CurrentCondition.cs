@@ -31,9 +31,9 @@ namespace HomeMonitoring
             using var reader = new StreamReader(stream);
             using var jsonReader = new JsonTextReader(reader);
             var results = serializer.Deserialize<WeatherSearch>(jsonReader);
-            
-            Console.WriteLine($"The temp is {results.main.Temp}");
-            Console.WriteLine($"Feels like {results.main.FeelsLike}");
+            Console.WriteLine($"The temp is {results.WeatherMain.Temp}");
+            Console.WriteLine($"Feels like {results.WeatherMain.FeelsLike}");
+           
         }
 
         

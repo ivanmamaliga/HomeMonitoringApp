@@ -11,10 +11,6 @@ namespace HomeMonitoring
     {
         public int numberOfRooms { get; set; } = 1;
 
-
-        public static bool activate { get; set; } = false;
-    
-
         public static int SetNumberOfRooms()
         {
             Console.WriteLine("Please choose the number of Rooms : \r\n");
@@ -46,19 +42,9 @@ namespace HomeMonitoring
             List<Room> rooms = new List<Room>() { room1, room2 };
 
             return rooms;
-        }
 
-       
+        }
+     
       
-
-        internal static bool Activated()
-        {
-            if (activate != false)
-            {
-                return true;
-            }
-
-            return default;
-        }
     }
 }

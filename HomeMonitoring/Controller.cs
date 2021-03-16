@@ -8,33 +8,55 @@ namespace HomeMonitoring
     /// </summary>
     public static class Controller
     {
-        //private readonly TemperatureSensor _temperatureSensor;   
+        public static bool activate { get; set; } = false;
 
-
-
-        public static void GetStatus()
+        public static void GetCurrentStatus()
         {
-            Area _area1 = new Area();
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine();
+            isActivated();
 
-            Room _room = new Room();
-
-            //foreach (Room room in _area1.GetRooms())
-            //{
-            //    Room _room = new Room();
-            // get the Number, Type and Properties of the bulb
-            foreach (Bulb bulb in _room.GetBulbs())
+            static void isActivated()
             {
-                //return bulb.GetBulbStatus();
+
+                if (Activated() != true)
+                {
+                    Console.WriteLine("Area Not Activated, choose next: ");
+                }
+                else
+                {
+                    Console.WriteLine("Area Activated, choose options:  ");
+
+                }
+            }
+            Console.WriteLine($"Press {'A'} to activate the system ");
+            Console.WriteLine($"Press {'D'} to desactivate the system ");
+        }
+        public static void Activate(string activateInput)
+        {
+            //TODO: implement lambda expression
+            if (activateInput == "A") 
+            {
+                activate = true;
+                Console.WriteLine("The area is activated  ");
+                Console.ReadKey();
+            }
+            else
+            {
+                activate = false;
+                Console.WriteLine("The area is deactivated  ");
+                Console.ReadKey();
+            }
+        }
+        internal static bool Activated()
+        {
+            if (activate != false)
+            {
+                return true;
             }
 
-            //     //check for the bulb if on/of
-
-            //     //Output like Bedroom 1 - bulb 1 is on
-            //     //                    2 - bulb 2 is off ..   
-
-
+            return default;
         }
-
 
     }
 }

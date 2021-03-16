@@ -7,9 +7,11 @@ using System.Reflection;
 namespace HomeMonitoring
 {
     class Program
+
     {
         static void Main(string[] args)
         {
+            
             CurrentCondition.GetCurrentTime();
 
             ConsoleColor foregroundColor = Console.ForegroundColor;
@@ -31,10 +33,10 @@ namespace HomeMonitoring
                 switch (ProvideMenuOptions())
                 {
                     case MenuOption.CheckTheStatus:
-                        GetCurrentStatus();
-                        Console.WriteLine("Press any key continue...");
-                                            
-                        Activate(Console.ReadLine());
+                        Controller.GetCurrentStatus();
+                        //Console.WriteLine("Press any key continue...");
+                        Console.WriteLine("Press any key to return to menu.");            
+                        Controller.Activate(Console.ReadLine());
                         break;
                     case MenuOption.ChooseRoom:
                         Area.SetNumberOfRooms();
@@ -61,23 +63,23 @@ namespace HomeMonitoring
             
             int returnValue = -1;
 
-            int minDemoOptionValue = (int)Enum.GetValues(typeof(MenuOption)).Cast<MenuOption>().First();
-            int maxDemoOptionValue = (int)Enum.GetValues(typeof(MenuOption)).Cast<MenuOption>().Last();
-            while (returnValue < minDemoOptionValue || returnValue > maxDemoOptionValue)
+            int minOptionValue = (int)Enum.GetValues(typeof(MenuOption)).Cast<MenuOption>().First();
+            int maxOptionValue = (int)Enum.GetValues(typeof(MenuOption)).Cast<MenuOption>().Last();
+            while (returnValue < minOptionValue || returnValue > maxOptionValue)
             {
                 //Console.Clear();
                 //Console.WriteLine();
                
 
-                
+           
 
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("Choose the option to run:");
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\t [1]  CheckTheStatus");
-                Console.WriteLine("\t [2]  ChooseRoom");
+                Console.WriteLine("\t [2]  ChooseRoom (not implemented)");
                 Console.WriteLine("\t [3]  ManageDevices");
-                Console.WriteLine("\t[ESC] Exit demo");
+                Console.WriteLine("\t[ESC] Exit");
                 //Console.ForegroundColor = foregroundColor;
                 var keyPress = Console.ReadKey(true);
                 //int returnValue;
@@ -104,42 +106,13 @@ namespace HomeMonitoring
             return (MenuOption)returnValue;
         
         }
-        private static void GetCurrentStatus()
-        {
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine();
-            isActivated();
-
-            static void isActivated() 
-            {
-
-                if (Area.Activated() != true)
-                {
-                    Console.WriteLine("Area Not Activated, choose next: ");
-                }
-                else
-                {
-                    Console.WriteLine("Area Activated, choose options:  ");
-
-                }
-            }
-            Console.WriteLine($"Press {'A'} to activate the system ");
-            Console.WriteLine($"Press {'D'} to desactivate the system ");
-
-            
-        }
-        static void Activate(string activateInput)
-        {
-
-            if (activateInput == "A")
-            {
-                Console.WriteLine("The are is armed ");
-            }
-        }
+    
+       
 
 
         public static void ManageDevices()
         {
+            Area.GetRooms();
             Console.WriteLine("Press b1 to turn the bulb1 on or off");
             Console.WriteLine("Press b2 to turn the bulb1 on or off");
             Console.WriteLine("Press b3 to turn the bulb1 on or off");
