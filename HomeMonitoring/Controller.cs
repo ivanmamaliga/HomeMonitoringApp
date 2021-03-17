@@ -29,11 +29,13 @@ namespace HomeMonitoring
 
                 }
             }
-            Console.WriteLine($"Press {'A'} to activate the system ");
-            Console.WriteLine($"Press {'D'} to desactivate the system ");
+           
         }
         public static void Activate(string activateInput)
         {
+            Console.WriteLine($"Press [A] to activate the system ");
+            Console.WriteLine($"Press [D] to desactivate the system ");
+            activateInput = Console.ReadLine();
             //TODO: implement lambda expression
             if (activateInput == "A") 
             {

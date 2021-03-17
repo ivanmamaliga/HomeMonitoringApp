@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "0cx9O+x11pHAx6cIc4kL5kBuph+f82LVdVAx1jotK4J8NzIWaYin7CRQudzXTCPkjOs5yM0DcKp0KRUB54lXqg==",
+  "dgSpecHash": "y6MwXpkA80UMaVXBD8z5XlJYUIMzczbkkSxfI52NSYUsD19lbomLmDyZoJwDPI8FzalVaAN/9h8Pk+GI0N/OHQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\johnc\\OneDrive2\\OneDrive\\HomeMonitoringApp\\HomeMonitoringConsApp\\HomeMonitoring\\HomeMonitoring.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\johnc\\.nuget\\packages\\antlr\\3.4.1.9004\\antlr.3.4.1.9004.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\microsoft.visualstudio.vsixcolorcompiler\\16.0.0\\microsoft.visualstudio.vsixcolorcompiler.16.0.0.nupkg.sha512",
@@ -14,29 +13,7 @@
     "C:\\Users\\johnc\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\johnc\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\johnc\\.nuget\\packages\\webgrease\\1.6.0\\webgrease.1.6.0.nupkg.sha512"
+    "C:\\Users\\johnc\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Antlr 3.4.1.9004' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Antlr",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'WebGrease 1.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
-      "libraryId": "WebGrease",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

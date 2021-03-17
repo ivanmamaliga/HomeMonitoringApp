@@ -11,10 +11,11 @@ namespace HomeMonitoring
     {
         static void Main(string[] args)
         {
-            
+            ConsoleColor foregroundColor = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             CurrentCondition.GetCurrentTime();
 
-            ConsoleColor foregroundColor = Console.ForegroundColor;
+            
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(@"  _   _                        __  __             _ _             _             ");
             Console.WriteLine(@" | | | | ___  _ __ ___   ___  |  \/  | ___  _ __ (_) |_ ___  _ __(_)_ __   __ _ ");
@@ -35,16 +36,16 @@ namespace HomeMonitoring
                     case MenuOption.CheckTheStatus:
                         Controller.GetCurrentStatus();
                         //Console.WriteLine("Press any key continue...");
-                        Console.WriteLine("Press any key to return to menu.");            
+                        
                         Controller.Activate(Console.ReadLine());
                         break;
                     case MenuOption.ChooseRoom:
-                        Area.SetNumberOfRooms();
+                        //Area.SetNumberOfRooms();
                         //Console.WriteLine("Press any key continue...");
                         //Console.ReadKey();
                         break;
                     case MenuOption.ManageDevices:
-                        ManageDevices();
+                        Devices.ManageDevices();
                         //Console.WriteLine("Press any key continue...");
                         //Console.ReadKey();
                         break;
@@ -106,17 +107,10 @@ namespace HomeMonitoring
             return (MenuOption)returnValue;
         
         }
-    
-       
 
 
-        public static void ManageDevices()
-        {
-            Area.GetRooms();
-            Console.WriteLine("Press b1 to turn the bulb1 on or off");
-            Console.WriteLine("Press b2 to turn the bulb1 on or off");
-            Console.WriteLine("Press b3 to turn the bulb1 on or off");
-            Console.WriteLine("Press b4 to turn the bulb1 on or off");
-        }
+
+
+     
     }
 }
