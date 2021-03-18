@@ -21,11 +21,11 @@ namespace HomeMonitoring
 
                 if (Activated() != true)
                 {
-                    Console.WriteLine("Area Not Activated, choose next: ");
+                    Console.WriteLine("Area Not Activated, please click any key to proceed ");
                 }
                 else
                 {
-                    Console.WriteLine("Area Activated, choose options:  ");
+                    Console.WriteLine("Area Activated, please click any key to proceed");
 
                 }
             }
@@ -37,16 +37,20 @@ namespace HomeMonitoring
             Console.WriteLine($"Press [D] to desactivate the system ");
             activateInput = Console.ReadLine();
             //TODO: implement lambda expression
-            if (activateInput == "A") 
+            if (activateInput == "A" || activateInput == "a") 
             {
                 activate = true;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("The area is activated  ");
+                Console.WriteLine("Press any key to continue");
                 Console.ReadKey();
             }
             else
             {
                 activate = false;
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("The area is deactivated  ");
+                Console.WriteLine("Press any key to continue");
                 Console.ReadKey();
             }
         }
