@@ -18,9 +18,9 @@ To run this application you will need an API key from <https://home.openweatherm
 - [x] Read data from an external file, such as text, JSON, CSV, etc and use that data in your application
 - [ ] Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format
 - [x] Connect to an external/3rd party API and read data into your app
-- [ ] Use a LINQ query to retrieve information from a data structure (such as a list or array) or file
+- [X] Use a LINQ query to retrieve information from a data structure (such as a list or array) or file
 - [ ] Create 3 or more unit tests for your application
-- [ ] Build a conversion tool that converts user input to another type and displays it (ex: converts cups to grams)
+- [X] Build a conversion tool that converts user input to another type and displays it (ex: converts cups to grams)
 - [ ] Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event)
 - [ ] Analyze text and display information about it (ex: how many words in a paragraph)
 - [ ] Visualize data in a graph, chart, or other visual representation of data
