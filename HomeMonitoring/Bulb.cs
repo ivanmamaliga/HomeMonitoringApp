@@ -15,8 +15,8 @@
      
         public enum BulbOnOff
         {
-            BulbOn,
-            BulbOff
+            BulbOn = 1,
+            BulbOff = 2
         }
 
         public string TurnBulbOn(bool isBulbOn)

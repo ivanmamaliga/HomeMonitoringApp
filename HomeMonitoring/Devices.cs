@@ -10,13 +10,17 @@ namespace HomeMonitoring
     {
         public static void ManageDevices()
         {
+            ConsoleColor foregroundColor = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Blue;
             var _area = new Area();
             var _rooms = from r in _area.GetRooms()
                          select r;
             foreach(var room in _rooms)
-            //Area.GetRooms();
-            Console.WriteLine( $"Room {room.Id} has {room.numberOfBulbs} number of bulbs and {room.numberOfVents} number of vents." ); 
+                //Area.GetRooms();
+            Console.WriteLine( $"Room {room.Id} has {room.numberOfBulbs} bulbs and {room.numberOfVents} vents." ); 
            
         }
+
+
     }
 }

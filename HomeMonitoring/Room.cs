@@ -15,15 +15,7 @@ namespace HomeMonitoring
 
         }
 
-        //internal Room(int _numberOfBulbs, int _numberOfVents)
-        //{
-        //    numberOfBulbs = _numberOfBulbs;
-        //    numberOfVents = _numberOfVents;
-
-        //    //System.Console.WriteLine($"The room has {_numberOfBulbs} bulbs");
-        //    //System.Console.WriteLine($"The room has {_numberOfVents} vents");
-
-        //}
+       
 
         public List<Bulb> GetBulbs()
         {
@@ -32,10 +24,7 @@ namespace HomeMonitoring
             Bulb bulb2 = new Bulb() { BulbType = "Regular", BulbLuminiscence = 2200, BulbPower = 55 };
             Bulb bulb3 = new Bulb() { BulbType = "Regular", BulbLuminiscence = 2300, BulbPower = 75 };
             Bulb bulb4 = new Bulb() { BulbType = "Regular", BulbLuminiscence = 2500, BulbPower = 100 };
-
-
             List<Bulb> bulbs = new List<Bulb>() { bulb1, bulb2, bulb3, bulb4 };
-
             return bulbs;
 
         }
