@@ -10,13 +10,24 @@
 
         public int BulbLuminiscence { get; set; } //not yet used
 
-        public bool IsBulbOn { get { return IsBulbOn; } set { IsBulbOn = false; } }
+        public bool isBulbOn { get { return isBulbOn; } set { isBulbOn = false; } }
 
      
         public enum BulbOnOff
         {
             BulbOn,
             BulbOff
+        }
+
+        public string TurnBulbOn(bool isBulbOn)
+        {
+          
+            if (!isBulbOn == false)
+            {
+               return "Bulb is On";
+            }
+            return "Bulb is Off";
+
         }
 
 

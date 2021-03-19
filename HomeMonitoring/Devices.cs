@@ -10,11 +10,13 @@ namespace HomeMonitoring
     {
         public static void ManageDevices()
         {
-            Area.GetRooms();
-            Console.WriteLine("Press b1 to turn the bulb1 on or off");
-            Console.WriteLine("Press b2 to turn the bulb1 on or off");
-            Console.WriteLine("Press b3 to turn the bulb1 on or off");
-            Console.WriteLine("Press b4 to turn the bulb1 on or off");
+            var _area = new Area();
+            var _rooms = from r in _area.GetRooms()
+                         select r;
+            foreach(var room in _rooms)
+            //Area.GetRooms();
+            Console.WriteLine( $"Room {room.Id} has {room.numberOfBulbs} number of bulbs and {room.numberOfVents} number of vents." ); 
+           
         }
     }
 }

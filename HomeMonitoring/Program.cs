@@ -9,8 +9,11 @@ namespace HomeMonitoring
     class Program
 
     {
+       
+
         static void Main(string[] args)
         {
+            
             ConsoleColor foregroundColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             CurrentCondition.GetCurrentTime();
@@ -46,8 +49,8 @@ namespace HomeMonitoring
                         break;
                     case MenuOption.ManageDevices:
                         Devices.ManageDevices();
-                        //Console.WriteLine("Press any key continue...");
-                        //Console.ReadKey();
+                        Console.WriteLine("Press any key continue...");
+                        Console.ReadKey();
                         break;
                     case MenuOption.Exit:
                         exit = true;
@@ -68,11 +71,11 @@ namespace HomeMonitoring
             int maxOptionValue = (int)Enum.GetValues(typeof(MenuOption)).Cast<MenuOption>().Last();
             while (returnValue < minOptionValue || returnValue > maxOptionValue)
             {
-                //Console.Clear();
-                //Console.WriteLine();
-               
+                
+                Console.WriteLine();
 
-           
+
+
 
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("Choose the option to run:");
@@ -105,12 +108,8 @@ namespace HomeMonitoring
             }
             //Console.ForegroundColor = foregroundColor;
             return (MenuOption)returnValue;
-        
+
         }
-
-
-
-
-     
+      
     }
 }

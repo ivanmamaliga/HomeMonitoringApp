@@ -4,6 +4,26 @@ namespace HomeMonitoring
 {
     internal class Room
     {
+        public string Id { get; set; }
+        public int numberOfBulbs { get; set; }
+
+        public int numberOfVents { get; set; }
+
+       
+        internal Room()
+        {
+
+        }
+
+        //internal Room(int _numberOfBulbs, int _numberOfVents)
+        //{
+        //    numberOfBulbs = _numberOfBulbs;
+        //    numberOfVents = _numberOfVents;
+
+        //    //System.Console.WriteLine($"The room has {_numberOfBulbs} bulbs");
+        //    //System.Console.WriteLine($"The room has {_numberOfVents} vents");
+
+        //}
 
         public List<Bulb> GetBulbs()
         {
@@ -20,6 +40,7 @@ namespace HomeMonitoring
 
         }
 
+      
         public List<Vent> GetVent()
         {
             Vent vent1 = new Vent();
