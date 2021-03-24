@@ -1,6 +1,6 @@
-# HomeMonitoringApp
+# Home Monitoring App
 
-The Home Monitoring is helping to manage different area devices in building,
+The Home Monitoring App is helping to manage different area devices in building,
 such as bulbs, vents, shades(not implemented) based on current weather
 conditions. The weather conditions are provided by OpenWeather API
 (www.openweathermap.org)
