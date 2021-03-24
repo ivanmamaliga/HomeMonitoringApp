@@ -15,12 +15,9 @@ namespace HomeMonitoring
             var _area = new Area();
             var _rooms = from r in _area.GetRooms()
                          select r;
-            foreach(var room in _rooms)
-                //Area.GetRooms();
-            Console.WriteLine( $"Room {room.Id} has {room.numberOfBulbs} bulbs and {room.numberOfVents} vents." ); 
-           
+            foreach (var room in _rooms)
+            { Console.WriteLine($"Room {room.Id} has {room.numberOfBulbs} bulbs and {room.numberOfVents} vents."); }
         }
-
-
+      
     }
 }

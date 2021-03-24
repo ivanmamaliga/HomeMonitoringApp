@@ -15,8 +15,6 @@ namespace HomeMonitoring
 
         }
 
-       
-
         public List<Bulb> GetBulbs()
         {
 
@@ -42,30 +40,6 @@ namespace HomeMonitoring
             return vents;
 
         }
-        //public static void GetBulbStatus()
-        //{
-        //    if (!IsBulbOn == true)
-        //    {
-        //        System.Console.WriteLine("True");
-        //    }
-        //    System.Console.WriteLine("False");
-        //}
-        //public static TurnBulbOn(Bulb bulb)
-        //{
-        //    if (!IsBulbOn == true)
-        //    {
-        //        return bulb;
-        //    }
-
-        //}
-
-        //public static TurnBulbOff(Bulb bulb)
-        //{
-        //    if (!IsBulbOn == true)
-        //    {
-        //        return IsBulbOn = false;
-        //    }
-
-        //}
+   
     }
 }
