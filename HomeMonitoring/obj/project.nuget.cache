@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y6MwXpkA80UMaVXBD8z5XlJYUIMzczbkkSxfI52NSYUsD19lbomLmDyZoJwDPI8FzalVaAN/9h8Pk+GI0N/OHQ==",
+  "dgSpecHash": "chzsiaJJLLQ0VcQJ9eiN8UFE4ZS3aBZXGIS3hQ0O4QQSQZGUpBPbg1ggjopWT3K0Rt+dhpnrdkeIstMPz0YE+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\johnc\\OneDrive2\\OneDrive\\HomeMonitoringApp\\HomeMonitoringConsApp\\HomeMonitoring\\HomeMonitoring.csproj",
+  "projectFilePath": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeMonitoring\\HomeMonitoring.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\johnc\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

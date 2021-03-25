@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-[assembly: AssemblyDescription("Home Monitoring App")]
+[assembly: AssemblyDescription("Home Monitoring App" )]
 
 namespace HomeMonitoring
 {
