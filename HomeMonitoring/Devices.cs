@@ -25,14 +25,14 @@ namespace HomeMonitoring
         {
             ConsoleColor foregroundColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("The bulbs are ON!");
+            Console.WriteLine("The lights are ON!");
 
         }
         public static void TurnBulbsOFF()
         {
             ConsoleColor foregroundColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("The bulbs are OFF!");
+            Console.WriteLine("The lights are OFF!");
         }
     }
 }

@@ -34,9 +34,10 @@ namespace HomeMonitoring
                         break;
                     case MenuOption.ManageDevices:
                         Devices.ManageDevices();
-                       
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.Cyan;
                         Console.WriteLine("Press [B] to turn lights ON.");
-                        Console.WriteLine("Press any key to turn lights ON.");
+                        Console.WriteLine("Press any key to turn lights OFF.");
                                              
                         if (Console.ReadLine().ToLower() == "b")
                         {
