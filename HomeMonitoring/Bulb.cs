@@ -12,8 +12,6 @@
         public int BulbLuminiscence { get; set; }
 
         public bool BulbOn { get; set; }
-
-
         
     }
 }
