@@ -1,20 +1,17 @@
 ﻿namespace HomeMonitoring
 {
-    public class Bulb
+    public struct Bulb
     {
         /// <summary>
         /// Bulb Properties
         /// </summary>
-        public string BulbType { get; set; }
+        public string BulbId { get; set; }
+        public string BulbType;
         public int BulbPower { get; set; }
 
-        public int BulbLuminiscence { get; set; } //not yet used
+        public int BulbLuminiscence { get; set; }
 
-     
-        public enum BulbOnOff
-        {
-            BulbOn = 1,
-            BulbOff = 2
-        }
+        public bool BulbOn { get; set; }
+        
     }
 }

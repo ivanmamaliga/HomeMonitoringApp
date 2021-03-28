@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-[assembly: AssemblyDescription("Home Monitoring App")]
+[assembly: AssemblyDescription("Home Monitoring App" )]
 
 namespace HomeMonitoring
 {
@@ -29,12 +29,24 @@ namespace HomeMonitoring
                         Controller.Activate(Console.ReadLine());
                         break;
                     case MenuOption.ChooseRoom:
-                      //TODO: implement
+                        //TODO: implement
+                        
                         break;
                     case MenuOption.ManageDevices:
                         Devices.ManageDevices();
-                        Console.WriteLine("Press any key continue...");
-                        Console.ReadKey();
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("Press [B] to turn lights ON.");
+                        Console.WriteLine("Press any key to turn lights OFF.");
+                                             
+                        if (Console.ReadLine().ToLower() == "b")
+                        {
+                            Devices.TurnBulbsOn(); 
+                        }
+                        else
+                        {
+                            Devices.TurnBulbsOFF();
+                        }
                         break;
                     case MenuOption.Exit:
                         exit = true;
@@ -44,7 +56,7 @@ namespace HomeMonitoring
 
         }
 
-        private static void BannerDisplay()
+          private static void BannerDisplay()
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(@"  _   _                        __  __             _ _             _             ");

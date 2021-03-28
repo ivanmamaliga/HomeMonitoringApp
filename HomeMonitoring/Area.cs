@@ -18,7 +18,6 @@ namespace HomeMonitoring
         };
         public List<Room> GetRooms() => rooms;
 
-
-                
+                   
     }
 }

@@ -645,11 +645,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\johnc\\OneDrive2\\OneDrive\\HomeMonitoringApp\\HomeMonitoringConsApp\\HomeMonitoring\\HomeMonitoring.csproj",
+      "projectUniqueName": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeMonitoring\\HomeMonitoring.csproj",
       "projectName": "HomeMonitoring",
-      "projectPath": "C:\\Users\\johnc\\OneDrive2\\OneDrive\\HomeMonitoringApp\\HomeMonitoringConsApp\\HomeMonitoring\\HomeMonitoring.csproj",
+      "projectPath": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeMonitoring\\HomeMonitoring.csproj",
       "packagesPath": "C:\\Users\\johnc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\johnc\\OneDrive2\\OneDrive\\HomeMonitoringApp\\HomeMonitoringConsApp\\HomeMonitoring\\obj\\",
+      "outputPath": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeMonitoring\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -2,44 +2,29 @@
 
 namespace HomeMonitoring
 {
-    internal class Room
+    public class Room
     {
+        /// <summary>
+        /// Room Setup
+        /// </summary>
+        public Bulb BulbInc { get; set; }
         public string Id { get; set; }
         public int numberOfBulbs { get; set; }
-
         public int numberOfVents { get; set; }
 
+
+
+
+
+        public List<Bulb> bulbs = new List<Bulb>()
+        { new Bulb() {BulbId = "1001", BulbType = "incadescent", BulbLuminiscence = 1200},
+          new Bulb() {BulbId = "1002", BulbType = "incadescent", BulbLuminiscence = 2400},
+          new() { BulbId = "1003", BulbType = "led", BulbLuminiscence = 3200 }
+        };
+        public List<Bulb> GetBulbs() => bulbs;
+
        
-        internal Room()
-        {
 
-        }
-
-        public List<Bulb> GetBulbs()
-        {
-
-            Bulb bulb1 = new Bulb() { BulbType = "Regular", BulbLuminiscence = 1200, BulbPower = 35 };
-            Bulb bulb2 = new Bulb() { BulbType = "Regular", BulbLuminiscence = 2200, BulbPower = 55 };
-            Bulb bulb3 = new Bulb() { BulbType = "Regular", BulbLuminiscence = 2300, BulbPower = 75 };
-            Bulb bulb4 = new Bulb() { BulbType = "Regular", BulbLuminiscence = 2500, BulbPower = 100 };
-            List<Bulb> bulbs = new List<Bulb>() { bulb1, bulb2, bulb3, bulb4 };
-            return bulbs;
-
-        }
-
-      
-        public List<Vent> GetVent()
-        {
-            Vent vent1 = new Vent();
-            Vent vent2 = new Vent();
-            Vent vent3 = new Vent();
-
-
-            List<Vent> vents = new List<Vent>() { vent1, vent2, vent3 };
-
-            return vents;
-
-        }
-   
+       
     }
 }

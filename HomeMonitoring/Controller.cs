@@ -21,11 +21,11 @@ namespace HomeMonitoring
 
                 if (Activated() != true)
                 {
-                    Console.WriteLine("Area Not Activated please click any key to proceed ");
+                    Console.WriteLine("Area Not Activated, please click any key to proceed ");
                 }
                 else
                 {
-                    Console.WriteLine("Area Activated, choose options:  ");
+                    Console.WriteLine("Area Activated, please click any key to proceed");
 
                 }
             }
