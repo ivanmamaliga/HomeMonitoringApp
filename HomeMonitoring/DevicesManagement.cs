@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeMonitoring
 {
-    class Devices
+    class DevicesManagement
     {
         public static void ManageDevices()
         {

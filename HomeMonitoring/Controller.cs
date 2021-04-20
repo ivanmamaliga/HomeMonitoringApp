@@ -10,6 +10,13 @@ namespace HomeMonitoring
     {
         public static bool activate { get; set; } = false;
 
+
+        internal static void GetCurrentTime()
+        {
+            DateTime today = DateTime.Now;
+            Console.WriteLine(value: $"Today is {today:F}. ");
+        }
+
         public static void GetCurrentStatus()
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
