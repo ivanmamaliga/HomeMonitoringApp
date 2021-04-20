@@ -10,9 +10,8 @@ namespace HomeMonitoring
     {
         static void Main(string[] args)
         {
-            ConsoleColor foregroundColor = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.DarkBlue;
-            CurrentCondition.GetCurrentTime();
+            Controller.GetCurrentTime();
 
             BannerDisplay();
 
@@ -33,7 +32,7 @@ namespace HomeMonitoring
                         
                         break;
                     case MenuOption.ManageDevices:
-                        Devices.ManageDevices();
+                        DevicesManagement.ManageDevices();
                         Console.WriteLine();
                         Console.ForegroundColor = ConsoleColor.Cyan;
                         Console.WriteLine("Press [B] to turn lights ON.");
@@ -41,11 +40,11 @@ namespace HomeMonitoring
                                              
                         if (Console.ReadLine().ToLower() == "b")
                         {
-                            Devices.TurnBulbsOn(); 
+                            DevicesManagement.TurnBulbsOn(); 
                         }
                         else
                         {
-                            Devices.TurnBulbsOFF();
+                            DevicesManagement.TurnBulbsOFF();
                         }
                         break;
                     case MenuOption.Exit:

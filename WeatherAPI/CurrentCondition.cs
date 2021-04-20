@@ -9,13 +9,8 @@ namespace HomeMonitoring
     /// <summary>
     /// Implement Weather API
     /// </summary>
-    internal class CurrentCondition
+    public class CurrentCondition
     {
-        internal static void GetCurrentTime()
-        {
-            DateTime today = DateTime.Now;
-            Console.WriteLine(value: $"Today is {today:F}. ");
-        }
         public static void GetCurrentConditions()
         {
             var webClient = new WebClient();
