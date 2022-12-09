@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeMonitoring\\HomeMonitoring.csproj": {}
+    "/workspaces/HomeMonitoringApp/HomeMonitoring/HomeMonitoring.csproj": {}
   },
   "projects": {
-    "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeLibrary\\HomeLibrary.csproj": {
+    "/workspaces/HomeMonitoringApp/HomeLibrary/HomeLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeLibrary\\HomeLibrary.csproj",
+        "projectUniqueName": "/workspaces/HomeMonitoringApp/HomeLibrary/HomeLibrary.csproj",
         "projectName": "HomeLibrary",
-        "projectPath": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeLibrary\\HomeLibrary.csproj",
-        "packagesPath": "C:\\Users\\johnc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeLibrary\\obj\\",
+        "projectPath": "/workspaces/HomeMonitoringApp/HomeLibrary/HomeLibrary.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/HomeMonitoringApp/HomeLibrary/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\johnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\WeatherAPI\\HomeAPIWeatherLibrary.csproj": {
-                "projectPath": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\WeatherAPI\\HomeAPIWeatherLibrary.csproj"
+              "/workspaces/HomeMonitoringApp/WeatherAPI/HomeAPIWeatherLibrary.csproj": {
+                "projectPath": "/workspaces/HomeMonitoringApp/WeatherAPI/HomeAPIWeatherLibrary.csproj"
               }
             }
           }
@@ -53,49 +47,54 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.100/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeMonitoring\\HomeMonitoring.csproj": {
+    "/workspaces/HomeMonitoringApp/HomeMonitoring/HomeMonitoring.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeMonitoring\\HomeMonitoring.csproj",
+        "projectUniqueName": "/workspaces/HomeMonitoringApp/HomeMonitoring/HomeMonitoring.csproj",
         "projectName": "HomeMonitoring",
-        "projectPath": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeMonitoring\\HomeMonitoring.csproj",
-        "packagesPath": "C:\\Users\\johnc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeMonitoring\\obj\\",
+        "projectPath": "/workspaces/HomeMonitoringApp/HomeMonitoring/HomeMonitoring.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/HomeMonitoringApp/HomeMonitoring/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\johnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeLibrary\\HomeLibrary.csproj": {
-                "projectPath": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\HomeLibrary\\HomeLibrary.csproj"
+              "/workspaces/HomeMonitoringApp/HomeLibrary/HomeLibrary.csproj": {
+                "projectPath": "/workspaces/HomeMonitoringApp/HomeLibrary/HomeLibrary.csproj"
               }
             }
           }
@@ -107,8 +106,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.VisualStudio.VsixColorCompiler": {
               "target": "Package",
@@ -129,7 +128,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -138,32 +138,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.100/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\WeatherAPI\\HomeAPIWeatherLibrary.csproj": {
+    "/workspaces/HomeMonitoringApp/WeatherAPI/HomeAPIWeatherLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\WeatherAPI\\HomeAPIWeatherLibrary.csproj",
+        "projectUniqueName": "/workspaces/HomeMonitoringApp/WeatherAPI/HomeAPIWeatherLibrary.csproj",
         "projectName": "HomeAPIWeatherLibrary",
-        "projectPath": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\WeatherAPI\\HomeAPIWeatherLibrary.csproj",
-        "packagesPath": "C:\\Users\\johnc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johnc\\Desktop\\HomeMonitoringConsApp\\HomeMonitoringApp\\WeatherAPI\\obj\\",
+        "projectPath": "/workspaces/HomeMonitoringApp/WeatherAPI/HomeAPIWeatherLibrary.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/HomeMonitoringApp/WeatherAPI/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\johnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -193,16 +187,27 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.100/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

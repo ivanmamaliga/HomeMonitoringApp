@@ -13,6 +13,7 @@ namespace HomeMonitoring
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Controller.GetCurrentTime();
 
+
             BannerDisplay();
 
             CurrentCondition.GetCurrentConditions();
