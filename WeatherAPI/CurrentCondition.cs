@@ -14,7 +14,7 @@ namespace HomeMonitoring
         public static void GetCurrentConditions()
         {
             var webClient = new WebClient();
-            byte[] weatherSearch = webClient.DownloadData(string.Format("http://api.openweathermap.org/data/2.5/weather?q=Louisville&appid=a479fe317c41285915790dc6497a2b3c&units=imperial"));
+            byte[] weatherSearch = webClient.DownloadData(string.Format("http://api.openweathermap.org/data/2.5/weather?q=Louisville&appid=WeatherApiKey"));
             var serializer = new JsonSerializer();
             using var stream = new MemoryStream(weatherSearch);
             using var reader = new StreamReader(stream);
